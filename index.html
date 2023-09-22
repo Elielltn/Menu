@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section class="header">
+        <div class="container"> <!--Deixa o texto centralizado colocando um padding de cada lado-->
+            <nav class="navbar navbar-expand-lg pl-0 pr-0">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="Logo" width="160" class="img-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>                    
+                </button>
+                <div class="callapse navbar-collapse" id="navbarNavDropDown">
+                    <ul class="navbar-nav ml-auto mr-auto"><!--Centraliza no meio-->
+                        <li class="nav-item">
+                            <a href="#reservas" class="nav-link"><b>Reserva</b></a><!--Botões que quando clicados direcionam para a respectiva section-->
+                        </li>
+                        <li class="nav-item">
+                            <a href="#servicos" class="nav-link"><b>Serviços</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#cardapio" class="nav-link"><b>Cardápios</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn btn-white btn-icon">
+                        Meu Carrinho <span class="icon">
+                            <i class="fa fa-shopping-bag"></i>
+                        </span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex text-banner">
+                        <h1><b>Escolha sua comida <b class="color-primary">favorita</b></b></h1>
+                        <p>
+                            Aproveite nossocardápio! Escolha o que desejar e receba em sua casa de forma rápida e segura.
+                        </p>
+                        <div>
+                            <a href="" class="btn btn-yellow mt-4 mr-3" >
+                                Ver cardápio
+                            </a>
+                            <a href="#" class="btn btn-white btn-icon-left mt-4">
+                                <span class="icon-left">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                                (81) 99002-8922
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="btn btn-sm btn-white btn-social mt-4">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <div class="card-banner"></div>
+                    <div class="d-flex img-banner">
+                        <img src="./img/burguer.png" alt="burguer">
+                    </div>
+                    <div class="card card-case">
+                        "Entrega rápida e funcionários simpáticos
+                        <br>A comida chegou quente e <br>
+                        muito saborosa!"
+                        <span class="card-case-name">
+                            <b>Thiago Lopes</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <div class="background-servicos">
+            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <span class="hint-title"><b>Serviços</b></span>
+                    <h1 class="title">
+                        <b>Como são nossos serviços?</b>
+                    </h1>
+                </div>
+                <div class="col-4 mb-5">
+                    <div class="card-icon text-center">
+                        <img src="./img/icone-pedido.svg" alt="pedido" width="150">
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <p><b>Fácil de pedir</b></p>
+                        <span>
+                            Você só precisa de alguns passos para pedir sua comida.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4 mb-5">
+                    <div class="card-icon text-center">
+                        <img src="./img/icone-delivery.svg" alt="pedido" width="250">
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <p><b>Entrga rápida</b></p>
+                        <span>
+                            Nossa entrega é sempre pontual, rápida e segura.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4 mb-5">
+                    <div class="card-icon text-center">
+                        <img src="./img/icone-qualidade.svg" alt="pedido" width="250">
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <p><b>Melhor qualidade</b></p>
+                        <span>
+                            Não só rapidez na entrega, a qualidade também é o nosso forte.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+
+        <div class="background-cardapio"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <span class="hint-title"><b>Cardápio</b></span>
+                    <h1 class="title">
+                        <b>Conheça o nosso cardápio</b>
+                    </h1>
+                </div>
+
+                <div class="col-12 container-menu">
+                    <a href="" class="btn btn-white btn-sm mr-3 active">
+                        <i class="fas fa-hamburger"></i>&nbsp; Burguers
+                    </a>
+                    <a href="" class="btn btn-white btn-sm mr-3">
+                        <i class="fas fa-pizza-slice"></i>&nbsp; Pizzas
+                    </a>
+                    <a href="" class="btn btn-white btn-sm mr-3">
+                        <i class="fas fa-drumstick-bite"></i>&nbsp; Churrasco
+                    </a>
+                    <a href="" class="btn btn-white btn-sm mr-3">
+                        <i class="fas fa-bacon"></i>&nbsp; Steaks
+                    </a>
+                    <a href="" class="btn btn-white btn-sm mr-3">
+                        <i class="fas fa-cocktail"></i>&nbsp; Bebidas
+                    </a>
+                    <a href="" class="btn btn-white btn-sm mr-3">
+                        <i class="fas fa-ice-cream"></i>&nbsp; Sobremesas
+                    </a>
+                </div>
+
+                <div class="col-12">
+                    <div class="row" id="itensCardapio">
+                        <div class="col-3 mb-5">
+                            <div class="card card-item">
+                                <div class="img-produto">
+                                    <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg" alt=""/>
+                                </div>
+                                <p class="title-produto text-center mt-4">
+                                    <b>Nome</b>
+                                </p>
+                                <p class="price-produto text-center">
+                                    <b>R$</b>
+                                </p>
+                                <div class="add-carrinho">
+                                    <span class="btn-menos"><i class="fas fa-minus"></i></span>
+                                    <span class="add-numero-itens">0</span>
+                                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
+                                    <span class="btn btn-add"><i class="fas fa-shopping-bag"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-5">
+                            <div class="card card-item">
+                                <div class="img-produto">
+                                    <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg" alt=""/>
+                                </div>
+                                <p class="title-produto text-center mt-4">
+                                    <b>Nome</b>
+                                </p>
+                                <p class="price-produto text-center">
+                                    <b>R$</b>
+                                </p>
+                                <div class="add-carrinho">
+                                    <span class="btn-menos"><i class="fas fa-minus"></i></span>
+                                    <span class="add-numero-itens">0</span>
+                                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
+                                    <span class="btn btn-add"><i class="fas fa-shopping-bag"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-5">
+                            <div class="card card-item">
+                                <div class="img-produto">
+                                    <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg" alt=""/>
+                                </div>
+                                <p class="title-produto text-center mt-4">
+                                    <b>Nome</b>
+                                </p>
+                                <p class="price-produto text-center">
+                                    <b>R$</b>
+                                </p>
+                                <div class="add-carrinho">
+                                    <span class="btn-menos"><i class="fas fa-minus"></i></span>
+                                    <span class="add-numero-itens">0</span>
+                                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
+                                    <span class="btn btn-add"><i class="fas fa-shopping-bag"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-5">
+                            <div class="card card-item">
+                                <div class="img-produto">
+                                    <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg" alt=""/>
+                                </div>
+                                <p class="title-produto text-center mt-4">
+                                    <b>Nome</b>
+                                </p>
+                                <p class="price-produto text-center">
+                                    <b>R$</b>
+                                </p>
+                                <div class="add-carrinho">
+                                    <span class="btn-menos"><i class="fas fa-minus"></i></span>
+                                    <span class="add-numero-itens">0</span>
+                                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
+                                    <span class="btn btn-add"><i class="fas fa-shopping-bag"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <a href="" class="btn btn-white btn-sm">
+                        Ver mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimentos" id="depoimentos">
+
+        <div class="background-depoimentos"></div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-5 text-center">
+                    <div class="card-depoimentos"></div>
+                    <div class="d-flex img-banner">
+                        <img src="./img/pizzas.png" alt=""/>
+                    </div>
+                </div>
+
+                <div class="col-7">
+                    <span class="hint-title"><b>Depoimentos</b></span>
+                    <h1 class="title">
+                        <b>O que dizem sobre nós?</b>
+                    </h1>
+                    <div class="mb-5">
+                        <div class="depoimento" id="depoimento-1">
+                            <div class="container-dados-depoimento">
+                                <div class="imagem-depoimento"></div>
+                                <div>
+                                    <p class="nome-depoimento"><b>Deigo Pereira</b></p>
+                                    <p class="nota-depoimento">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="texto-depoimento">
+                                <i class="fas fa-quote-left"></i>
+                                <span>
+                                    Muito bom, recomendo demais! Comida muito bem feita pelo chef, atendimento dentro dos parâmetros e boa comunicação com o cliente.
+                                </span>
+                                <i class="fas fa-quote-right"></i>
+                            </p>
+                        </div>
+
+                        <div class="depoimento hidden" id="depoimento-2">
+                            <div class="container-dados-depoimento">
+                                <div class="imagem-depoimento"></div>
+                                <div>
+                                    <p class="nome-depoimento"><b>Ana Beatriz</b></p>
+                                    <p class="nota-depoimento">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>&nbsp; <span>5.0</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="texto-depoimento">
+                                <i class="fas fa-quote-left"></i>
+                                <span>
+                                    Um jantar perfeito do início ao fim. Comida, experiência, serviço...
+                                    foi tão maravilhoso que fomos dois dias seguidos - fato inédito para mim em uma viagem.
+                                </span>
+                                <i class="fas fa-quote-right"></i>
+                            </p>
+                        </div>
+
+                        <div class="depoimento hidden" id="depoimento-3">
+                            <div class="container-dados-depoimento">
+                                <div class="imagem-depoimento"></div>
+                                <div>
+                                    <p class="nome-depoimento"><b>João Guilherme</b></p>
+                                    <p class="nota-depoimento">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>&nbsp; <span>4.0</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="texto-depoimento">
+                                <i class="fas fa-quote-left"></i>
+                                <span>
+                                    A comida estava excelente e o serviço gentil nos surpreendeu!
+                                    Dica: reserve umas três horas para ter uma experiência incrível.
+                                </span>
+                                <i class="fas fa-quote-right"></i>
+                            </p>
+                        </div>
+
+                        <a href="" class="btn btn-sm btn-white btn-social active mr-3">1</a>
+                        <a href="" class="btn btn-sm btn-white btn-social mr-3">2</a>
+                        <a href="" class="btn btn-sm btn-white btn-social">3</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+
+    <section class="reserva" id="reservas">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="card-secondary">
+
+                        <div class="row">
+
+                            <div class="col-7">
+                                <span class="hint-title"><b>Reserva</b></span>
+                                <h1 class="title">
+                                    <b>Quer reservar um horário?</b>
+                                </h1>
+                                <p class="pr-5">
+                                    Mande uma mensagem clicando no botão abaixo
+                                    <br>
+                                    Reserve sua data e horário de forma simples e rápida
+                                </p>
+                                <a href="" class="btn btn-yellow mt-4">
+                                    Fazer reserva
+                                </a>
+                            </div>
+
+                            <div class="col-5">
+                                <div class="card-reserva"></div>
+                                <div class="d-flex img-banner">
+                                    <img src="./img/icone-reserva.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-3 container-logo-footer">
+                    <img src="./img/logo.png" class="logo-footer" alt="">
+                </div>
+
+                <div class="col-6 container-texto-footer">
+                    <p class="mb-0">
+                        <b>Menu On-line</b> &copy; Todos os direitos reservados
+                    </p>
+                </div>
+
+                <div class="col-3 container-redes-footer">
+                    <a href="" class="btn btn-sm btn-white btn-social mr-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="btn btn-sm btn-white btn-social mr-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="btn btn-sm btn-white btn-social">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+</body>
+</html>
