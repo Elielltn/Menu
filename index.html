@@ -8,8 +8,17 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fontawesome.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
+
+    <div class="container-mensagens" id="container-mensagens"></div>
+
+    <a class="botao-carrinho hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
+        <div class="badge-total-carrinho">0</div>
+        <i class="fa fa-shopping-bag"></i>
+    </a>
+
     <section class="header">
         <div class="container"> <!--Deixa o texto centralizado colocando um padding de cada lado-->
             <nav class="navbar navbar-expand-lg pl-0 pr-0">
@@ -36,8 +45,9 @@
                             <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
                         </li>
                     </ul>
-                    <a href="" class="btn btn-white btn-icon">
+                    <a class="btn btn-white btn-icon" onclick="cardapio.metodos.abrirCarrinho(true)">                       
                         Meu Carrinho <span class="icon">
+                            <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
                             <i class="fa fa-shopping-bag"></i>
                         </span>
                     </a>
@@ -56,7 +66,7 @@
                             Aproveite nossocardápio! Escolha o que desejar e receba em sua casa de forma rápida e segura.
                         </p>
                         <div>
-                            <a href="" class="btn btn-yellow mt-4 mr-3" >
+                            <a class="btn btn-yellow mt-4 mr-3" >
                                 Ver cardápio
                             </a>
                             <a href="#" class="btn btn-white btn-icon-left mt-4">
@@ -67,13 +77,13 @@
                             </a>
                         </div>
                     </div>
-                    <a href="" class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                    <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="" class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                    <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="" class="btn btn-sm btn-white btn-social mt-4">
+                    <a class="btn btn-sm btn-white btn-social mt-4">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -285,9 +295,9 @@
                             </p>
                         </div>
 
-                        <a href="" class="btn btn-sm btn-white btn-social active mr-3">1</a>
-                        <a href="" class="btn btn-sm btn-white btn-social mr-3">2</a>
-                        <a href="" class="btn btn-sm btn-white btn-social">3</a>
+                        <a class="btn btn-sm btn-white btn-social active mr-3">1</a>
+                        <a class="btn btn-sm btn-white btn-social mr-3">2</a>
+                        <a class="btn btn-sm btn-white btn-social">3</a>
                     </div>
                 </div>
 
@@ -315,7 +325,7 @@
                                     <br>
                                     Reserve sua data e horário de forma simples e rápida
                                 </p>
-                                <a href="" class="btn btn-yellow mt-4">
+                                <a class="btn btn-yellow mt-4">
                                     Fazer reserva
                                 </a>
                             </div>
@@ -352,13 +362,13 @@
                 </div>
 
                 <div class="col-3 container-redes-footer">
-                    <a href="" class="btn btn-sm btn-white btn-social mr-3">
+                    <a class="btn btn-sm btn-white btn-social mr-3">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="" class="btn btn-sm btn-white btn-social mr-3">
+                    <a class="btn btn-sm btn-white btn-social mr-3">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="" class="btn btn-sm btn-white btn-social">
+                    <a class="btn btn-sm btn-white btn-social">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -371,7 +381,7 @@
 
         <div class="m-header">
             <div class="container">
-                <a href="" class="btn btn-white btn-sm float-right">
+                <a class="btn btn-white btn-sm float-right" onclick="cardapio.metodos.abrirCarrinho(false)">
                     Fechar
                 </a>
                 <div class="etapas">
@@ -413,7 +423,7 @@
                         <div class="form-group container-cep">
                             <label>CEP:</label>
                             <input type="text" id="txtCEP" class="form-control">
-                            <a href="" class="btn btn-yellow btn-sm"><i class="fa fa-search"></i></a>
+                            <a class="btn btn-yellow btn-sm"><i class="fa fa-search"></i></a>
                         </div>
                     </div>
                     <div class="col-8"></div>
@@ -569,19 +579,19 @@
                     </p>
                 </div>
 
-                <a href="" class="btn btn-yellow float-right" id="btnEtapaPedido">
+                <a class="btn btn-yellow float-right" id="btnEtapaPedido">
                     Continuar
                 </a>
                 
-                <a href="" class="btn btn-yellow float-right hidden" id="btnEtapaEndereço">
+                <a class="btn btn-yellow float-right hidden" id="btnEtapaEndereço">
                     Revisar pedido
                 </a>
                 
-                <a href="" class="btn btn-yellow float-right hidden" id="btnEtapaResumo">
+                <a class="btn btn-yellow float-right hidden" id="btnEtapaResumo">
                     Enviar pedido
                 </a>
 
-                <a href="" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">
+                <a class="btn btn-white float-right mr-3 hidden" id="btnVoltar">
                     Voltar
                 </a>
             </div>
